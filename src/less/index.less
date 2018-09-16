@@ -1,0 +1,96 @@
+@import url('./heard.less');
+
+//三要术样式
+.character {
+  margin-top: 20px;
+  .row {
+    .characterone {
+      background: url(../../images/feature01.png) no-repeat;
+      & > div {
+        margin-left: 60px;
+        margin-bottom: 20px;
+        h3 {
+          margin-top: 0px;
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+    }
+    & > div:nth-child(2) {
+      background: url(../../images/feature02.png) no-repeat;
+    }
+    & > div:nth-child(3) {
+      background: url(../../images/feature03.png) no-repeat;
+    }
+  }
+}
+//表格样式
+.TB{
+  &>div{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    h6{
+      display: inline-block;
+    }
+    h1{
+      color: #2e8ece;
+      font-size: 26px;
+      font-weight: bold;
+      margin: 0;
+      padding-bottom: 4px;
+      border-bottom: 4px solid #2e8ece;
+      display: inline-block;
+    }
+    h4{
+      float: right;
+      a{
+        color: black;
+        font-size: 14px;
+        &:hover{
+          color: #2e8ece;
+          text-decoration:underline;
+        }
+
+    }
+    }
+  }
+  th{
+    color: #ccc;
+  }
+  td{
+    font-size: 18px;
+    }
+  }
+  //表格小bug的修改
+  @media screen and (max-width: 760px) {
+  .mediaTitle{
+    display: none;
+  }
+}
+.CT{
+  margin: 0;
+  padding: 0;
+  h3{
+    color: #2e8ece;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 4px;
+    border-bottom: 4px solid #2e8ece;
+    display: inline-block;
+  }
+  a{
+    margin-top: 10px;
+    color: black;
+    &:hover{
+      text-decoration: none;
+      color: #2e8ece;
+    }
+  }
+  .page-header{
+    margin: 0px;
+    padding: 0px
+  }
+}
+@import url('./fooTer.less');
