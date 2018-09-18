@@ -89,118 +89,69 @@ require_once('./headerTwo.php');
 
         <!--==========右边的导航栏===========-->
         <div class="col-md-9">
-            <div class="panel panel-default PerCen_L">
-                <!--==========右边头部===========-->
-                <div class="panel-heading clearfix">
-                    <img class="pull-left img-responsive" src="./images/head_icon.jpg" alt="">
-                    <div class="pull-left">
-                        <p id="nameper">昵 称：源代码教育</p>
-                        <p>最后登录时间：2016-10-25 15:30:10</p>
-                    </div>
-                </div>
 
-                <!--==========右边内容部分===========-->
+            <div class="panel panel-default">
+                <div class="panel-heading">个人资料</div>
                 <div class="panel-body">
-                    <div class="row h4">
-                        <div class="col-sm-4">
-                            总金额：<span class="text-primary">10000元</span>
-                        </div>
-                        <div class="col-sm-4">
-                            可用金额：<span class="text-primary">8000元</span>
-                        </div>
-                        <div class="col-sm-4">
-                            冻结金额：<span class="text-primary">2000元</span>
-                        </div>
-                    </div>
 
-                    <div class="btn_L">
-                        <a class="btn btn-primary btn-lg" href="#">账户充值</a>
-                        <a class="btn btn-danger btn-lg" href="#">账户提现</a>
-                    </div>
-
-                    <div class="el-account-info PenCen_B">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div>
-                                    <div>
-                                        <img class="pull-left" src="images/shiming.png"/>
-                                    </div>
-
-                                    <div>
-                                        <h5 class="">实名认证</h5>
-                                        <p>
-                                            未认证
-                                            <a href="#">马上认证</a>
-                                        </p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <p class="info">实名认证之后才能在平台投资</p>
-                                </div>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-2 control-label">手机号码</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputEmail3">
                             </div>
-
-                            <div class="col-sm-4">
-                                <div>
-                                    <div>
-                                        <img class="pull-left" src="images/shouji.jpg"/>
-                                    </div>
-
-                                    <div>
-                                        <h5 class="">手机认证</h5>
-                                        <p>
-                                            已认证
-                                            <a href="#">查看
-
-                                            </a>
-                                        </p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <p class="info">实名认证之后才能在平台投资</p>
-                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">联系电话</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputPassword3">
                             </div>
-
-                            <div class="col-sm-4">
-                                <div>
-                                    <div>
-                                        <img class="pull-left" src="images/youxiang.jpg"/>
-                                    </div>
-
-                                    <div>
-                                        <h5 class="">邮箱认证</h5>
-                                        <p>
-                                            已认证
-                                            <a href="#">查看</a>
-                                        </p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <p class="info">您可以设置邮箱来接收重要信息</p>
-                                </div>
-                            </div>
-
                         </div>
 
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div>
-                                    <div>
-                                        <img class="pull-left" src="images/baozhan.jpg"/>
-                                    </div>
-
-                                    <div>
-                                        <h5 class="">VIP会员</h5>
-                                        <p>
-                                            普通用户
-                                            <a href="#">查看</a>
-                                        </p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                    <p class="info">VIP会员，让你更快捷的投资</p>
-                                </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">个人收入</label>
+                            <div class="col-sm-10">
+                                <select class="form-control">
+                                    <option>1000以下</option>
+                                    <option>1000元-1999元</option>
+                                    <option>2000元-2999元</option>
+                                    <option>3000元-4999元</option>
+                                    <option>10000元以上</option>
+                                </select>
                             </div>
-
                         </div>
-                    </div>
+
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">个人学历</label>
+                            <div class="col-sm-10">
+                                <select class="form-control">
+                                    <option>初中</option>
+                                    <option>中专/高中</option>
+                                    <option>专科</option>
+                                    <option>本科</option>
+                                    <option>硕士研究生</option>
+                                    <option>博士研究生</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-2 control-label">联系地址</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">提交</button>
+                            </div>
+                        </div>
+                    </form>
 
                 </div>
+            </div>
+
             </div>
 
         </div>
