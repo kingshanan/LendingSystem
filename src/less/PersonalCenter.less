@@ -1,6 +1,9 @@
 //=========login 页面样式========//
 @import url('./heard.less');
 
+body{
+  overflow-x: hidden;
+}
 //=========导航栏样式设置=======//
 .PerCen {
   .panel-group .panel + .panel{
@@ -51,6 +54,7 @@
     }
   }
 }
+
 .PenCen_B{
   .col-sm-4{
     margin-bottom: 50px;
@@ -64,6 +68,44 @@
 .yingcnag{
   display: none;
   height: 10px;
+}
+
+.but1{
+  display: none;
+}
+
+//========效果的样式设置======//
+
+@media all and (max-width: 768px){
+
+  #personCon{
+    height: 860px;
+    position: relative;
+    left: -50%;
+    top: 20px;
+    transition: all 2s;
+  }
+
+  #personCon.active{
+    left: 0%;
+  }
+  .right_per{
+    .PerCen{
+      position: absolute;
+      left: 0px;
+    }
+    .PerCen_M{
+      position: absolute;
+      left: 50%;
+      .but1{
+        position: absolute;
+        left: 3%;
+        z-index: 1000;
+        background-color: #00ee00;
+        display: block;
+      }
+    }
+  }
 }
 //=======尾部样式引入==========//
 @import url('./fooTer.less');

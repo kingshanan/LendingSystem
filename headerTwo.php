@@ -13,7 +13,7 @@
     <ul class="nav navbar-nav" id="me">
         <li class="active"><a href="./index.php?menuId=1">首页 <span class="sr-only">(current)</span></a></li>
         <li><a href="./invest.php?menu=2">我要投资</a></li>
-        <li><a href="#">我要借款</a></li>
+        <li><a href="./borrow.php?menu=3">我要借款</a></li>
         <li><a href="./PersonalCenter.php?menuId=4">个人中心</a></li>
         <li><a href="#">新手指引</a></li>
         <li><a href="#">关于我们</a></li>

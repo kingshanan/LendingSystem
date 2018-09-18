@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>index</title>
     <!-- 引入bootstap。css样式 -->
@@ -20,75 +20,19 @@
 <?php
 require_once('./header.php');
 require_once('./headerTwo.php');
-?>;
+?>
 
 <!--==========开始--中间内容--Intermediate content===========-->
-<div class="container">
+<div class="container" id="personCon">
     <div class="row right_per">
-
         <!--==========左边的导航栏===========-->
-        <div class="col-md-3 PerCen">
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingOne">
-                        <h4 class="panel-title">
-                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                借款明细
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                        <div class="panel-body">
-                            <ul>
-                                <li><a href="#">借款目的</a> </li>
-                                <li><a href="#">还款事件</a> </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingTwo">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                借款明细
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                        <div class="panel-body">
-                            <ul>
-                                <li><a href="#">借款目的</a> </li>
-                                <li><a href="#">还款事件</a> </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="panel panel-default">
-                    <div class="panel-heading" role="tab" id="headingThree">
-                        <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                               借款明细
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                        <div class="panel-body">
-                            <ul>
-                                <li><a href="#">借款目的</a> </li>
-                                <li><a href="#">还款事件</a> </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
+       <?php
+       require_once ('./Leftnav.php')
+       ?>
 
         <!--==========右边的导航栏===========-->
-        <div class="col-md-9">
+        <div class="col-md-9 col-xs-12 PerCen_M">
+            <botton type="button" class="but1 btn-xs">显示</botton>
             <div class="panel panel-default PerCen_L">
                 <!--==========右边头部===========-->
                 <div class="panel-heading clearfix">
@@ -196,7 +140,6 @@ require_once('./headerTwo.php');
                                     <p class="info">VIP会员，让你更快捷的投资</p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
 
@@ -204,7 +147,7 @@ require_once('./headerTwo.php');
             </div>
 
         </div>
-        
+
     </div>
 </div>
 
@@ -218,15 +161,7 @@ require_once('./fooTer.php');
 <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
 <!-- 自定义的js样式 -->
 <script src="./dist/js/index.min.js"></script>
-<script>
-    //=====请用用户名数据======//
-    $.get('./Api/Chickuser.php', function (data) {
-        // console.log(data);
-        if (data.isSuccess) {
-            var strlogin = ` <p id="nameper">用户名： ${data.username}</p>`;
-            $("#nameper").after(strlogin);
-        }
-    }, 'json');
-</script>
+<!--//=====左边交互======// -->
+<script src="dist/js/Leftnav.min.js"></script>
 </body>
 </html>

@@ -17,7 +17,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li id="phomelogin"><a href="#">首页</a></li>
+                <li id="phomelogin"><a href="./index.php">首页</a></li>
 
 
                 <li><a href="#">帮助</a></li>
@@ -32,7 +32,7 @@
     $.get('./Api/Chickuser.php', function (data) {
         // console.log(data);
         if (data.isSuccess) {
-            var strlogin = ` <li><a href="./login.php">${data.username}</a></li>
+            var strlogin = ` <li><a href="./PersonalCenter.php">${data.username}</a></li>
           <li><a href="#">赶快充值</a></li>
           <li><a href="./Api/loginWhite.php">注销</a></li>`;
             $("#phomelogin").after(strlogin);
